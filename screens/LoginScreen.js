@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { StyleSheet, Text, View, TextInput, Button, Pressable, Alert} from "react-native";
 import "../FirebaseConfig";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigation } from '@react-navigation/native'; 
-import { login } from "../store"; 
 
 
 

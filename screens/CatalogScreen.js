@@ -3,7 +3,7 @@ import { View, Text, Button, FlatList, StyleSheet, Alert, Image } from "react-na
 import { useSelector, useDispatch } from "react-redux"; 
 import { removeSong } from "../store"; 
 import { db } from "../FirebaseConfig"; 
-import { doc, getDocs, deleteDoc, collection, query, where} from "firebase/firestore"; 
+import { getDocs, deleteDoc, collection, query, where} from "firebase/firestore"; 
 
 export default function CatalogScreen() {
   const dispatch = useDispatch();

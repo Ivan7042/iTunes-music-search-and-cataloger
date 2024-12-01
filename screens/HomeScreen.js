@@ -5,8 +5,8 @@ import { addSong } from "../store";
 import { setCatalog } from "../store";
 import { useNavigation } from "@react-navigation/native";
 import { Audio } from "expo-av";
-import { db } from "../FirebaseConfig"; // Make sure to import your Firestore instance
-import { doc, setDoc, getDocs, addDoc, collection } from "firebase/firestore"; // Firestore functions to set and get data
+import { db } from "../FirebaseConfig"; 
+import { getDocs, addDoc, collection } from "firebase/firestore"; 
 
 export default function HomeScreen() {
   const [searchTerm, setSearchTerm] = useState(""); 
